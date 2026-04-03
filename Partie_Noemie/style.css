@@ -1,0 +1,130 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff; /* Le fond du site est blanc */
+}
+
+/* --- LA SECTION HERO (L'image de l'éléphant) --- */
+.hero {
+    background-image: url('hot-air-balloon-adventure.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Garde l'effet de parallaxe si tu aimes ça */
+    height: 70vh; /* Ajuste ici pour la hauteur (70% de l'écran) */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- LA BARRE DE NAVIGATION --- */
+.navbar {
+    color: white;
+    padding: 20px 40px;
+    width: 100%;
+    background-color: transparent; /* Transparente au début */
+    transition: background-color 0.8s ease, color 0.8s ease, border-bottom 0.8s ease;
+}
+
+/* Effet au survol de la barre */
+.navbar:hover {
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Changement de couleur des liens au survol de la barre */
+.navbar:hover .nav-group a {
+    color: black;
+}
+
+.navbar:hover .nav-group a:hover{
+  color : #b49051 ;
+}
+
+/* Changement du logo au survol (si c'est une image blanche) */
+.navbar:hover .nav-logo img {
+    filter: invert(1); /* Inverse les couleurs pour qu'il devienne noir */
+}
+
+/* --- MISE EN PAGE INTERNE --- */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-group a {
+    color: inherit; /* Utilise la couleur parente (white ou black) */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: opacity 0.3s, color 0.8s ease;
+}
+
+.nav-group a:hover {
+    opacity: 0.7;
+}
+
+/* Style du Logo */
+.nav-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-logo img {
+    width: 45px;
+    margin-bottom: 5px;
+    transition: filter 0.8s ease;
+}
+
+.nav-logo span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Bouton Bleu (CTA) */
+.btn-cta {
+    background-color: #4a69bd;
+    padding: 5px 20px;
+    border-radius: 4px;
+    font-weight: 600 !important;
+    color: white !important; /* Reste blanc même au survol de la navbar */
+    transition: background 0.3s !important;
+}
+
+.btn-cta:hover {
+    background-color: #3b539a;
+    opacity: 1 !important;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero {
+        height: auto; /* Laisse l'image s'adapter sur mobile */
+        padding-bottom: 20px;
+    }
+}
