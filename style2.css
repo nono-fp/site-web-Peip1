@@ -199,3 +199,146 @@ body {
         font-size: 32px;
     }
 }
+
+
+/* --- LA SECTION CARDS --- */        
+		
+/* ── Section coups de coeur ── */
+.content-white {
+	background: #fff;
+    padding: 64px 48px 80px;
+}
+ 
+.content-white h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0 0 8px;
+}
+ 
+.section-sub {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: #999;
+    margin: 0 0 40px;
+}
+ 
+/* ── Grille ── */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+ 
+/* ── Carte ── */
+.card-link {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+ 
+.card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #ebebeb;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+ 
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.10);
+}
+ 
+        /* Image avec badge superposé */
+.card-img-wrap {
+	position: relative;
+}
+ 
+.card-image {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+}
+ 
+.card-badge {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	background: rgba(26,26,26,0.75);
+	color: #fff;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-size: 11px;
+	padding: 4px 12px;
+	border-radius: 20px;
+	letter-spacing: 0.3px;
+	backdrop-filter: blur(4px);
+}
+ 
+        /* Contenu */
+.card-content {
+	padding: 18px 18px 20px;
+}
+ 
+        .city-name {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #1a1a1a;
+	margin: 0 0 12px;
+}
+ 
+        .card-meta {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-bottom: 14px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid #f0f0f0;
+}
+ 
+.flight-info,
+.dates {
+    font-family: 'Playfair Display', serif;
+    font-size: 12.5px;
+	color: #888;
+}
+ 
+.action-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+ 
+.read-more {
+	font-family: 'Playfair Display', serif;
+	font-size: 13px;
+	font-style: italic;
+	font-weight: 600;
+	color: #1a1a1a;
+}
+ 
+.arrow {
+	font-size: 16px;
+	color: #1a1a1a;
+	transition: transform 0.2s ease;
+}
+ 
+.card:hover .arrow {
+	transform: translateX(5px);
+}
+ 
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+	.cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+ 
+@media (max-width: 600px) {
+    .content-white { padding: 40px 20px 60px; }
+    .cards-grid { grid-template-columns: 1fr; }
+}
