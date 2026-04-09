@@ -173,7 +173,7 @@ body {
 
 /* Bouton Bleu (CTA) */
 .btn-cta {
-    background-color: #4a69bd;
+    background-color: #c8ad7f;
     padding: 5px 20px;
     border-radius: 4px;
     font-weight: 600 !important;
@@ -199,7 +199,6 @@ body {
         font-size: 32px;
     }
 }
-
 
 /* --- LA SECTION CARDS --- */        
 		
@@ -341,4 +340,27 @@ body {
 @media (max-width: 600px) {
     .content-white { padding: 40px 20px 60px; }
     .cards-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Footer ── */
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 48px 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+ 
+.footer p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+}
+ 
+.footer-copy {
+    color: #555 !important;
+    font-size: 12px !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
 }
