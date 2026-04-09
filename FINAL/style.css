@@ -301,6 +301,28 @@ body {
 	border-bottom: 1px solid #f0f0f0;
 }
  
+ .card-price {
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+    color: #1a1a1a;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.card-price span {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #999;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.card-price strong {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #b49051; /* Le beige doré de ton logo */
+}
+ 
 .flight-info,
 .dates {
     font-family: 'Playfair Display', serif;
