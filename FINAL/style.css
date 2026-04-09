@@ -12,13 +12,7 @@ body {
 
 /* --- LA SECTION HERO --- */
 .hero {
-    background: linear-gradient(
-                to bottom, 
-                rgba(0,0,0,0.6) 0%,   /* Sombre en haut pour la navbar */
-                rgba(0,0,0,0.2) 50%,  /* Plus clair au milieu pour l'image */
-                rgba(0,0,0,0.7) 100%  /* Très sombre en bas pour la transition */
-            ), 
-            url('hot-air-balloon-adventure.jpg');
+    background-image: url('hot-air-balloon-adventure.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -179,7 +173,7 @@ body {
 
 /* Bouton Bleu (CTA) */
 .btn-cta {
-    background-color: #4a69bd;
+    background-color: #c8ad7f;
     padding: 5px 20px;
     border-radius: 4px;
     font-weight: 600 !important;
@@ -205,7 +199,6 @@ body {
         font-size: 32px;
     }
 }
-
 
 /* --- LA SECTION CARDS --- */        
 		
@@ -239,49 +232,27 @@ body {
 }
  
 /* ── Carte ── */
-
 .card-link {
 	text-decoration: none;
 	color: inherit;
 	display: block;
 }
  
-
- 
-.destinations-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    display: flex; /* Permet aux enfants d'utiliser flexbox */
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
 .card {
     background: #fff;
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
-    height: 100%; /* Force la carte à remplir la hauteur de la ligne */
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease;
+    border: 1px solid #ebebeb;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
 }
-
-
-.card-content {
-    padding: 20px;
-    flex-grow: 1; /* Force ce bloc à "pousser" pour remplir le vide */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Aligne le bouton en bas */
-}
+ 
 .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 16px 40px rgba(0,0,0,0.10);
 }
  
-  
+        /* Image avec badge superposé */
 .card-img-wrap {
 	position: relative;
 }
@@ -309,7 +280,9 @@ body {
 }
  
         /* Contenu */
-
+.card-content {
+	padding: 18px 18px 20px;
+}
  
         .city-name {
 	font-family: 'Playfair Display', serif;
@@ -367,4 +340,27 @@ body {
 @media (max-width: 600px) {
     .content-white { padding: 40px 20px 60px; }
     .cards-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Footer ── */
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 48px 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+ 
+.footer p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+}
+ 
+.footer-copy {
+    color: #555 !important;
+    font-size: 12px !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
 }
