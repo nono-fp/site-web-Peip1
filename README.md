@@ -1,3 +1,2 @@
 # site-web-Peip1
-Pour la couleur beige on peut tester : #c8ad7f
-idée logo : montgolfière
+On utilise du php qui ne peut pas être lu par le navigateur. Installer xampp et start Appache
