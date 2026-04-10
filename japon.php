@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découvrir Kyoto - Horizons</title>
+	<link rel="icon" type="image/png" href="logo_beige.png">
+    <link rel="stylesheet" href="destination.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('https://wallpapercave.com/wp/wp6956104.jpg');">
+        <div class="hero-content">
+            <span class="hero-tag">Asie</span>
+            <h1>Kyoto, Japon</h1>
+            <p>L'âme éternelle du Pays du Soleil Levant</p>
+        </div>
+    </header>
+ 
+    <main class="container">
+        <section class="description">
+            <h2>À propos de la destination</h2>
+            <p>Ancienne capitale impériale du Japon, Kyoto est une ville où le temps semble s'être arrêté. Entre ses 2 000 temples bouddhistes et sanctuaires shinto, ses jardins zen impeccables et ses quartiers de geishas traditionnels, elle offre un contraste saisissant avec la modernité de Tokyo.</p>
+            <p>Le mois de mai est idéal pour visiter la ville : les températures sont douces et les jardins sont d'un vert éclatant après la saison des cerisiers en fleurs.</p>
+ 
+            <h2>À ne pas manquer</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">⛩️</div>
+                    <h3>Fushimi Inari</h3>
+                    <p>Des milliers de torii vermillon qui s'étendent à flanc de montagne — le symbole incontournable de Kyoto.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🌿</div>
+                    <h3>Arashiyama</h3>
+                    <p>La forêt de bambous de Sagano, les temples cachés et la rivière Oi composent un tableau inoubliable.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏯</div>
+                    <h3>Gion</h3>
+                    <p>Le quartier historique des geishas, avec ses maisons de thé et ses ruelles pavées à l'atmosphère unique.</p>
+                </div>
+            </div>
+        </section>
+ 
+        <aside class="info-sidebar">
+            <div class="info-card">
+                <h3>Informations de voyage</h3>
+                <ul>
+                    <li><strong>✈️ Vol :</strong> 12h de vol (depuis Paris)</li>
+                    <li><strong>📅 Dates :</strong> 8 mai — 11 mai</li>
+                    <li><strong>🌡️ Météo prévue :</strong> 22°C, Ensoleillé</li>
+                    <li><strong>💰 Monnaie :</strong> Yen japonais (JPY)</li>
+                    <li><strong>🗣️ Langue :</strong> Japonais</li>
+                    <li><strong>🕐 Décalage horaire :</strong> +8h (Paris)</li>
+                </ul>
+                <a href="reservation.php?dest=Kyoto, Japon&prix=2290&img=https://wallpapercave.com/wp/wp6956104.jpg" style="text-decoration: none;">
+					<button class="btn-book">Réserver ce voyage • 2290€</button>
+				</a>
+            </div>
+ 
+            <div class="info-card tips-card">
+                <h3>💡 Conseils pratiques</h3>
+                <ul>
+                    <li>Achetez un IC Card pour les transports en commun</li>
+                    <li>Réservez les restaurants populaires à l'avance</li>
+                    <li>Visitez les temples tôt le matin pour éviter la foule</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+ 
+    <div class="back-container">
+        <a href="nos_destinations.html" class="back-btn">← Retour aux destinations</a>
+    </div>
+
+	<footer class="footer">
+        <p>Horizon Travel Planning</p>
+        <p class="footer-copy">&copy; 2026 — Tous droits réservés</p>
+    </footer>
+ 
+</body>
+</html>

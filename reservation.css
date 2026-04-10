@@ -1,0 +1,83 @@
+
+.hero-reservation {
+    height: 40vh; 
+}
+ 
+ 
+
+/* --- Formulaire --- */
+.booking-section {
+    background: #fff;
+}
+ 
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+ 
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+ 
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1a1a1a;
+}
+ 
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+ 
+.form-group input:focus, 
+.form-group select:focus {
+    outline: none;
+    border-color: #c8ad7f;
+}
+ 
+.form-group textarea {
+    resize: vertical;
+}
+ 
+
+.price-badge {
+    font-size: 24px;
+    font-weight: 600;
+    color: #c8ad7f;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+ 
+.price-badge span {
+    font-size: 14px;
+    color: #777;
+}
+ 
+.summary-list {
+    margin-top: 10px;
+}
+ 
+.summary-list li {
+    font-size: 13px ;
+}
+ 
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}

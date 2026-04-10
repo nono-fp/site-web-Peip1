@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découvrir la Thaïlande - Horizons</title>
+	<link rel="icon" type="image/png" href="logo_beige.png">
+    <link rel="stylesheet" href="destination.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+    <header class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('https://www.kayak.fr/news/wp-content/uploads/sites/7/2022/10/DEST_THAILAND_BANGKOK_LUMPHINI_PARK_GettyImages-550050377.jpg');">
+        <div class="hero-content">
+            <span class="hero-tag">Asie du Sud-Est</span>
+            <h1>Bangkok, Thaïlande</h1>
+            <p>Le sourire de l'Asie, entre temples et plages</p>
+        </div>
+    </header>
+ 
+    <main class="container">
+        <section class="description">
+            <h2>À propos de la destination</h2>
+            <p>La Thaïlande est l'une des destinations les plus populaires au monde, et pour cause : elle offre un mélange enivrant de culture bouddhiste, de gastronomie explosive, de plages turquoise et de jungle luxuriante. Bangkok, sa capitale tentaculaire, est une ville qui ne dort jamais, où gratte-ciels ultramodernes côtoient des temples anciens et des marchés flottants.</p>
+            <p>Juin marque le début de la saison des pluies, ce qui signifie moins de touristes, des prix plus bas, et une végétation d'un vert éclatant. Les pluies sont généralement courtes et n'empêchent pas de profiter de la journée.</p>
+ 
+            <h2>À ne pas manquer</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">🛕</div>
+                    <h3>Wat Phra Kaew</h3>
+                    <p>Le Temple du Bouddha d'Émeraude, le plus sacré de Thaïlande, situé dans l'enceinte du Grand Palais Royal de Bangkok.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🍜</div>
+                    <h3>Street food de Bangkok</h3>
+                    <p>Pad thaï, tom yum, mango sticky rice... les marchés de nuit de la capitale sont un festin pour les papilles.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">🏝️</div>
+                    <h3>Koh Lanta</h3>
+                    <p>À quelques heures de Bangkok, les îles du sud offrent des plages de sable blanc et des eaux cristallines idéales pour la plongée.</p>
+                </div>
+            </div>
+        </section>
+ 
+        <aside class="info-sidebar">
+            <div class="info-card">
+                <h3>Informations de voyage</h3>
+                <ul>
+                    <li><strong>✈️ Vol :</strong> 11h de vol (depuis Paris)</li>
+                    <li><strong>📅 Dates :</strong> 10 juin — 20 juin</li>
+                    <li><strong>🌡️ Météo prévue :</strong> 32°C, Chaud et humide</li>
+                    <li><strong>💰 Monnaie :</strong> Baht thaïlandais (THB)</li>
+                    <li><strong>🗣️ Langue :</strong> Thaï, Anglais dans les villes</li>
+                    <li><strong>🕐 Décalage horaire :</strong> +6h (Paris)</li>
+                </ul>
+                <a href="reservation.php?dest=Bangkok, Thaïlande&prix=1890&img=https://www.kayak.fr/news/wp-content/uploads/sites/7/2022/10/DEST_THAILAND_BANGKOK_LUMPHINI_PARK_GettyImages-550050377.jpg" style="text-decoration: none;">
+					<button class="btn-book">Réserver ce voyage • 1890€</button>
+				</a>
+            </div>
+ 
+            <div class="info-card tips-card">
+                <h3>💡 Conseils pratiques</h3>
+                <ul>
+                    <li>Enlevez vos chaussures avant d'entrer dans les temples</li>
+                    <li>Habillez-vous de façon couverte dans les lieux sacrés</li>
+                    <li>Utilisez Grab (l'Uber local) pour éviter les arnaques</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+ 
+    <div class="back-container">
+        <a href="nos_destinations.html" class="back-btn">← Retour aux destinations</a>
+    </div>
+	
+	<footer class="footer">
+        <p>Horizon Travel Planning</p>
+        <p class="footer-copy">&copy; 2026 — Tous droits réservés</p>
+    </footer>
+ 
+</body>
+</html>

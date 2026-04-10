@@ -1,0 +1,382 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+}
+
+.hero {
+    background-image: url('hot-air-balloon-adventure.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh; 
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    color: white;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.hero-content {
+    margin: auto 0; 
+    padding: 20px;
+    max-width: 900px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 8vw, 65px); 
+    font-weight: 400;
+}
+
+.hero-content h1 strong {
+    font-style: italic; 
+    font-weight: 400;
+}
+
+
+.navbar {
+    width: 100%;
+    padding: 30px 40px;
+    background-color: transparent;
+    transition: all 0.5s ease;
+    z-index: 10;
+    position: absolute; 
+    top: 0;
+}
+
+
+.nav-group a {
+    text-decoration: none;
+    color: white; 
+    transition: color 0.3s ease;
+}
+
+
+.navbar:hover {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar:hover .nav-group a {
+    color: black;
+}
+
+.navbar:hover .nav-logo {
+    color: black;
+}
+
+.navbar:hover .nav-logo img {
+    filter: invert(1);
+}
+
+
+.navbar .nav-group a:hover {
+    color: #b49051 !important;
+}
+
+
+.navbar .nav-group a.btn-cta:hover {
+    background-color: #1f3473;
+    color: white !important; 
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 60px; 
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.nav-group {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+}
+
+
+.nav-left {
+    justify-content: flex-end;
+    min-width: 250px;
+}
+
+.nav-right {
+    justify-content: flex-start;
+    min-width: 250px; 
+}
+
+.nav-logo {
+    flex: 0 0 auto;
+}
+
+
+.nav-logo {
+    flex: 0 0 auto;
+    padding: 0 40px;
+}
+
+.nav-logo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo a:hover {
+    transform: scale(1.05); 
+}
+
+.nav-logo img {
+    width: 45px;
+    margin-bottom: 5px;
+    transition: filter 0.8s ease;
+}
+
+.nav-logo span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.btn-cta {
+    background-color: #c8ad7f;
+    padding: 5px 20px;
+    border-radius: 4px;
+    font-weight: 600 ;
+    color: white ;
+    transition: background 0.3s ;
+}
+
+.btn-cta:hover {
+    background-color: #3b539a;
+    opacity: 1 ;
+}
+
+
+
+     
+		
+
+.content-white {
+	background: #fff;
+    padding: 64px 48px 80px;
+}
+ 
+.content-white h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0 0 8px;
+}
+ 
+.section-sub {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: #999;
+    margin: 0 0 40px;
+}
+ 
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+ 
+/* ── Carte ── */
+.card-link {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+ 
+.card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #ebebeb;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+ 
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.10);
+}
+ 
+      
+.card-img-wrap {
+	position: relative;
+}
+ 
+.card-image {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+}
+ 
+.card-badge {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	background: rgba(26,26,26,0.75);
+	color: #fff;
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-size: 11px;
+	padding: 4px 12px;
+	border-radius: 20px;
+	letter-spacing: 0.3px;
+	backdrop-filter: blur(4px);
+}
+ 
+        /* Contenu */
+.card-content {
+	padding: 18px 18px 20px;
+}
+ 
+        .city-name {
+	font-family: 'Playfair Display', serif;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #1a1a1a;
+	margin: 0 0 12px;
+}
+ 
+        .card-meta {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-bottom: 14px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid #f0f0f0;
+}
+ 
+ .card-price {
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+    color: #1a1a1a;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.card-price span {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #999;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.card-price strong {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #b49051; 
+}
+ 
+.flight-info,
+.dates {
+    font-family: 'Playfair Display', serif;
+    font-size: 12.5px;
+	color: #888;
+}
+ 
+.action-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+ 
+.read-more {
+	font-family: 'Playfair Display', serif;
+	font-size: 13px;
+	font-style: italic;
+	font-weight: 600;
+	color: #1a1a1a;
+}
+ 
+.arrow {
+	font-size: 16px;
+	color: #1a1a1a;
+	transition: transform 0.2s ease;
+}
+ 
+.card:hover .arrow {
+	transform: translateX(5px);
+}
+ 
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+	.cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+ 
+@media (max-width: 600px) {
+    .content-white { padding: 40px 20px 60px; }
+    .cards-grid { grid-template-columns: 1fr; }
+}
+
+
+@media (max-width: 900px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero {
+        height: auto;
+    }
+    .hero-content h1 {
+        font-size: 32px;
+    }
+}
+/* ── Footer ── */
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 48px 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+ 
+.footer p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+}
+ 
+.footer-copy {
+    color: #555 !important;
+    font-size: 12px !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+}
